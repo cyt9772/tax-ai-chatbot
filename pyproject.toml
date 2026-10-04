@@ -1,0 +1,21 @@
+[project]
+name = "inflearn-streamlit"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain-classic>=1.0.8",
+    "langchain-openai>=1.6.7",
+    "langchain-pinecone>=0.2.13",
+    "pinecone>=7.3.0",
+    "streamlit>=1.65.0",
+]
+
+[project.scripts]
+inflearn-streamlit = "inflearn_streamlit:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
